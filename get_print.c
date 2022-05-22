@@ -14,8 +14,11 @@ int (*get_print(char s))(va_list, flags_t *)
 	ph func_arr[] = {
 		{'p', print_address},
 		{'s', print_string}
+		{'c', print_char},
+		{'%', print_percent},
+		{'i', print_int}
 	};
-	int flags = 2;
+	int flags = 5;
 
 	register int i;
 
