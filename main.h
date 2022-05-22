@@ -1,9 +1,10 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 
+#include <stdlib.h>
 #include <stdarg.h>
 
-int _putchar(char c)
+int _putchar(char c);
 int _printf(const char *format, ...);
 void _puts(char *str);
 int _strlen(char *s);
@@ -21,6 +22,6 @@ int print_base16_upper_lower(va_list arg, char *representation);
 int loop_format(va_list arg, const char *string);
 int call_funct_mgr(char aux, va_list arg);
 int check_percent(int *flag, char aux);
-
+int get_flag(char s, flags_t *f);
 
 #endif /* MAIN_H */
