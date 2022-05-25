@@ -1,6 +1,14 @@
 #include "main.h"
 #include <unistd.h>
 
+/** INSERT OF _PUTS */
+int _puts(char *str)
+{
+	char *a = str;
+	while (*str)
+		_putchar(*str++);
+	return (str - a);
+
 /** INSERT OF _PUTCHAR */
 
 int _putchar(char c)
