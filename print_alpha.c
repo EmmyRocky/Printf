@@ -1,4 +1,12 @@
 #include "main.h"
+#include <unistd.h>
+
+/** INSERT OF _PUTCHAR */
+
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 
 /**
  * print_string - loops through a string and prints
